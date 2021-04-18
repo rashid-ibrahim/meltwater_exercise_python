@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Super Secret File Manipulator</title>
+        <link rel="stylesheet" type="text/css" href="static/css/results.css" />
+    </head>
+    <body>
+        <div class="row">
+            <div class="column">
+                <h4>Original Text</h4>
+                <p>{{original}}</p>
+            </div>
+            <div class="column">
+                <h4>New Text</h4>
+                <p>{{redacted}}</p>
+            </div>
+        </div>
+        <br /><br />
+        <div>
+            <p>
+                <a download href="/download-file">
+                    <button type="button">Download Redacted File</button>
+                </a>
+            </p>
+        </div>
+    </body>
+</html>

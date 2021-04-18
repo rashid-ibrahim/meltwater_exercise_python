@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Super Secret File Manipulator</title>
+        <link rel="stylesheet" type="text/css" href="static/css/index.css" />
+    </head>
+    <body>
+        <div class="content">
+            <form id="secretFileUpload" enctype="multipart/form-data" action="/" method="post">
+                <label for="secretFile">Select a file to be REDACTED:</label>
+                <input type="file" id="secretFile" required="required" name="secretFile" accept=".txt" />
+                <br /><br />
+                <label for="sensitiveWords">Enter the words to remove from the text</label>
+                <input type="text" id="sensitiveWords" required="required" name="sensitiveWords">
+                <br /><br />
+                <input type="submit" class="button" value="Make Secret!" name="submit" />
+            </form>
+        </div>
+    </body>
+</html>
