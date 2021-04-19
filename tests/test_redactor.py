@@ -1,7 +1,6 @@
 from controllers import redactor
 
 
-# Gonna need some sort of class to hold variables
 def test_simple_redact():
     test_words = 'fox, lazily, fence'
     test_string = 'The quick brown fox jumped lazily over the fence.'

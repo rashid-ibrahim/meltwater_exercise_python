@@ -4,8 +4,10 @@ import re
 def redact(secret_words: str, clear_text: str):
     """
 
-    :param secret_words: str
-    :param clear_text: str
+    :param secret_words: Words to be redacted from the text.
+    :type secret_words: str
+    :param clear_text: Raw plain text before obfuscation.
+    :type clear_text: str
 
     """
 
