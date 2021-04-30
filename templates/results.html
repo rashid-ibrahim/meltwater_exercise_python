@@ -18,11 +18,10 @@
         </div>
         <br /><br />
         <div>
-            <p>
-                <a download href="/download-file">
-                    <button type="button">Download Redacted File</button>
-                </a>
-            </p>
+            <form id="downloadForm" name="downloadForm" action="/download-file" method="post">
+                <input type="text" id="filename" required="required" name="filename" hidden value="{{filename}}">
+                <input type="submit" class="button" value="Download Redacted File" name="submit" id="submit" />
+            </form>
         </div>
     </body>
 </html>

@@ -1,4 +1,6 @@
 import os
+import random
+from string import ascii_letters
 
 from flask import current_app
 
@@ -10,7 +12,7 @@ class FileOperations:
     either user information, the files being encrypted, a hash value for each operation, or some combination of those.
     """
     def __init__(self):
-        self._out_file = 'redacted.txt'
+        self._out_file = ''.join(random.choice(ascii_letters) for _ in range(15))
         config = current_app.config
         self._file_path = os.path.join(current_app.root_path, config['FILES_DIRECTORY'])
 

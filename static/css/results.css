@@ -1,21 +1,6 @@
-
-:root {
-    --background: #E0FFFF;
-}
-
-body{
-    width:100%;
-    min-height:100%;
-    background-color:var(--background);
-}
+@import url("index.css");
 
 .column {
     float: left;
     width: 50%;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
 }
